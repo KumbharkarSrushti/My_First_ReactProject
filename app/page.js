@@ -1,14 +1,12 @@
-import App from "./App.js"
+import Header from "./App.js"
 import MovieList from "./action.js"
 import Footer from "./Footer.js"
-import AddMovieButton from "./addMovie.js"
 
-const Main_App = () => {
+const Page = () => {
   return (
     <>
-        <App />
+        <Header />
         <MovieList />   
-        <AddMovieButton />
         <Footer />
         
      
@@ -17,5 +15,5 @@ const Main_App = () => {
   );
 };
 
-export default Main_App;
+export default Page;
 

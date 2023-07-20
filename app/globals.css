@@ -1,44 +1,37 @@
 body{
-	background-color:#343a40;
+	background-color:#0E0E15;
 	margin:0px;
 
 }
 
 .row{
-	border:1px solid red;
 	height:28px;
 }
 .row2{
-	border:1px solid red;
 	height:72px;
 }
 .row3{
-	border:1px solid red;
+	border-bottom:1px solid #F85146;
 	height:28px;
 }
 .row4{
-	border:1px solid red;
 	height:40px;
 }
 .row5{
-	border:1px solid red;
 	height:30px;
 }
 .row6{
-	border:1px solid red;
 	height:28px;
 }
 
 .col1{
     float:left;
-    border:solid 1px blue;
     height:70px;
     width:72px;
     margin-left:35px;
 }
 .col2{
     float:left;
-    border:solid 1px blue;
     height:48px;
     width:170px;
     margin-left:20px;
@@ -47,7 +40,6 @@ body{
 }
 .col3{
     float:right;
-    border:solid 1px blue;
     height:30px;
     width:105px;
     margin-right:35px;
@@ -58,7 +50,6 @@ body{
 }
 .col4{
     float:right;
-    border:solid 1px blue;
     height:30px;
     width:60px;
     margin-right:35px;
@@ -68,7 +59,6 @@ body{
 }
 .col5{
 	float:left;
-    border:solid 1px blue;
     height:28px;
     width:56px;
     margin-left:120px;
@@ -81,7 +71,7 @@ body{
     height:400px;
     width:auto;
     margin-top:10px;
-    border-bottom:1px solid blue;
+    border-bottom:2px solid #494F55;
     margin-left:160px;
     margin-right:160px;
 }
@@ -107,11 +97,9 @@ body{
 }
 
 .footer{
-   border : 2px solid blue;
    background-color:rgba(39, 39, 52, 1);
    height:200px;
    width:100%;
-   
  }
 
 .footer-img{
@@ -125,9 +113,9 @@ body{
 .footer-content{
     margin-left:160px;
     height:auto;
-    border:1px solid blue;
     width:1511px;
-    
+    padding-top:30px;
+    padding-bottom:160px;
 }
 
 .footer-header{
@@ -169,8 +157,8 @@ body{
   display: inline-block;
   float:left;
   margin-top:10px;
-  font-size: 40px; 
-
+  font-size: 30px;
+  text-align:center;
 }
 
 
@@ -213,7 +201,7 @@ body{
 .t-area{
     background:#5E5E75;
     width:500px;
-    height:100px
+    height:150px
 }
 
 .g{
@@ -234,8 +222,16 @@ body{
 
 
 
-
-
+.t{
+    background:#5E5E75;
+    width:150px;
+    height:40px
+}
+.Add{
+    height:50px;
+    width:150px;
+    background:#F85146;
+}
 
 
 

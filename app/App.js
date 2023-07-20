@@ -1,4 +1,4 @@
-const App=()=>{
+const Header=()=>{
     return(
 	    <>
 	       <div className="row"></div>
@@ -29,4 +29,4 @@ const App=()=>{
 	    </>
 	);
 };
-export default App;
+export default Header;

@@ -1,9 +1,12 @@
+import DeleteButton from "./Delete.js"
+import VoteUpButton from "./LikeButton.js"
+import VoteDownButton from "./DislikeButton.js"
 const MovieCard =({movie, onVoteUp, onVoteDown,onDelete }) =>{
   
   return (
     <div className="Movie_Row_Movie">
        <div className="Image_Col">
-        <img className="img1" src="image 1.png" alt="vector" height="100%" width="100%" />
+        <img src={movie.image} height="100%" width="100%"/>
       </div>
       
       <div className="Movie_data">
@@ -12,10 +15,10 @@ const MovieCard =({movie, onVoteUp, onVoteDown,onDelete }) =>{
           <p className="white">{movie.Description}</p>
       </div>
       <div className="handlevote">
-            <img className="likevoteButton" src="Icon - Like.svg" alt="vector" height="50px" width="50px" onClick={() => onVoteUp(movie.id)} />
+            <DeleteButton onClick={() => onVoteUp(movie.id)} />
             <span className="dot">{movie.votes || 0}</span>
-            <img className="dislikevoteButton" src="dislikeIcon.svg" alt="vector" height="50px" width="50px" onClick={() => onVoteDown(movie.id)} />
-            <img className="DeleteButton" src="Vector.svg"  alt="vector" onClick={() => onDelete(movie.id)}/>
+            <VoteDownButton onClick={() => onVoteDown(movie.id)} />
+            <VoteUpButton onClick={() => onDelete(movie.id)} />
       </div>
       
     </div>
@@ -23,4 +26,3 @@ const MovieCard =({movie, onVoteUp, onVoteDown,onDelete }) =>{
 };
 
 export default MovieCard;
-
