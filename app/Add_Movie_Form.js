@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const AddMovieForm = ({ onMovieAdd }) => {
+const AddMovieForm = ({ onMovieAdd ,onHideForm }) => {
   const [title, setTitle] = useState('');
   const [year, setYear] = useState('');
   const [Description, setDescription] = useState('');
@@ -15,6 +15,9 @@ const AddMovieForm = ({ onMovieAdd }) => {
 
   const handleDescriptionChange = (e) => {
     setDescription(e.target.value);
+  };
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
   };
 
 
@@ -75,6 +78,9 @@ const AddMovieForm = ({ onMovieAdd }) => {
         <br />
 
         <button className="Add" type="submit">Add Movie</button>
+        <button className="Hide" type="button" onClick={onHideForm}>
+          Hide Form
+        </button>
       </form>
     </div>
   );
