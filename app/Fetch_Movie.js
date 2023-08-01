@@ -6,13 +6,13 @@ const MovieCard =({movie, onVoteUp, onVoteDown,onDelete }) =>{
   return (
     <div className="Movie_Row_Movie">
        <div className="Image_Col">
-        <img src={movie.image} height="100%" width="100%"/>
-      </div>
+            <img src={`http://image.tmdb.org/t/p/w500${movie.poster_path}`} height="360px" width="300px"/>       
+       </div>
       
       <div className="Movie_data">
           <h1 className="white">{movie.title}</h1>
-          <p className="white">{movie.year}<span> | {movie.genre}</span></p>
-          <p className="white">{movie.Description}</p>
+          <p className="white">{movie.release_date}<span> | {movie.genre}</span></p>
+          <p className="white">{movie.overview}</p>
       </div>
       <div className="handlevote">
             <DeleteButton onClick={() => onVoteUp(movie.id)} />
